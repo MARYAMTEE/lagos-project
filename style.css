@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+:root{
+    --soft-beige: #FAF3E0;
+    --deep-green:#007F5C;
+    --dark-gray: #2C2C2C;
+}
+img{
+    max-width: 100%;
+} 
+
+body{
+    font-family: "Open Sans", serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-size: 1rem;
+    color: var(--dark-gray);
+}
+
+h1, h2, h3{
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  text-wrap: nowrap;
+}
+
+/* header of the page */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--deep-green);
+}
+
+.logo-img{
+    width: 3.125rem;
+}
+
+/* navigation bar */
+nav ul{
+    display: flex;
+    gap: 1rem;
+}
+
+ul li {
+    display: inline;
+    list-style-type: none;
+    padding: 0 12px;
+    position: relative;
+}
+
+ul li a:not(.dropdown-menu a) {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    right: -7rem;
+    top: 2.3rem;
+    background-color: #444;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+    transition: transform 0.5s ease;
+}
+
+.dropdown-menu.toggle{
+   display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.dropdown-menu a{
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover{
+    background-color: #666;
+}
+
+/* Page banner */
+.banner{
+    background-color: var(--soft-beige);
+    height: calc(100vh - 3rem);
+}
+
+/* The moving bus and train section */
+.lasg__illustration{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: calc(100% - 0.5rem);
+    overflow: hidden;
+}
+
+.lasg__illustration__road{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 6;
+    background-color: #384D4E;
+}
+
+.lasg__illustration__road img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.motion__illustration{
+    width: 10rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 6;
+    left: -12.5rem;
+    animation: lefttoright 10s ease-in-out infinite;
+}
+
+.lasg__illustration__water{
+    position: absolute;
+    bottom: 0;
+    left: -0.8rem;
+    width: 100%;
+    z-index: 4;
+}
+
+.lasg__illustration__water img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.motion__illustration img{
+    width: 100%;
+}
+
+.lasumbus{
+    width: 5.6rem;
+    animation-delay: 5s;
+}
+
+.brt{
+    width: 8.125rem;
+    animation-delay: 9s;
+    left: -20rem;
+}
+
+.lagride{
+    width: 6.875rem;
+    animation-delay: 3s;
+}
+
+@keyframes lefttoright {
+    to{
+        left: calc(100% + 18.75rem);
+    }
+}
+
+main{
+    height: auto;
+}
+
+.banner-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 2.5rem;
+    word-break: no-break;
+}
+
+.banner-text p{
+    padding: 1.5rem 0;
+}
+
+.banner-text .btn {
+    border: 1px solid var(--deep-green);
+    padding: 0.5rem 2rem;
+    background-color: transparent;
+    font-size: 1rem;
+    color: var(--deep-green);
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.5s ease;
+}
+
+.banner-text .btn:hover{
+    background-color: var(--deep-green);
+    color: var(--soft-beige);   
+}
+
+.arms{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.column h2{
+    font-size: 2.5rem;
+}
+
+.column p{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.image-a{
+    width: 10rem;
+}
+
+.image-b{
+    width: 8rem;
+}
+
+
+/* Map of Lagos */
+.lagos-map-section{
+    background-image: url(./images/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eyo{
+    width: 25rem;
+}
+
+.image-map{
+    width: 35rem;
+}
