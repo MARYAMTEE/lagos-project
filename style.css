@@ -91,6 +91,7 @@ ul li a:not(.dropdown-menu a) {
     text-decoration: none;
     display: block;
     white-space: nowrap;
+    font-size: 0.7rem;
 }
 
 .dropdown-menu a:hover{
@@ -390,7 +391,7 @@ header{
   }
 
   .banner{
-        height: calc(100vh - 25rem);
+        height: calc(100vh - 15rem);
     }
     
     .eyo{
