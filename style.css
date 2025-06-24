@@ -189,7 +189,7 @@ main{
     z-index: 10;
 }
 
-.banner-text h1 {
+.banner-text h1{
     font-size: 2.5rem;
     word-break: no-break;
 }
@@ -255,11 +255,14 @@ main{
 .lagos-map-section{
     background-image: url(./images/background.svg);
     background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
     background-size: cover;
     height: 50rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .cultural-image{
@@ -324,7 +327,7 @@ section {
 .card {
   background: white;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 250px;
@@ -334,4 +337,54 @@ section {
   width: 64px;
   height: 64px;
   margin-bottom: 0.5rem;
+}
+
+
+@media (max-width: 43.75rem){
+    body{
+        font-size: 0.825rem;
+    }
+
+/* header */
+header{
+    padding: 0.5rem 1rem;
+}
+  .logo-img{
+    width: 1.5rem;
+  }
+
+  /* Navigation bar */
+  ul li, .logo-image{
+    display: flex;
+    align-items: center;
+  }
+
+  ul li a{
+    font-size: 0.5rem;
+  }
+
+  .dropdown-menu{
+    position: absolute;
+    right: -8rem;
+    top: 1.5rem;
+  }
+
+  /* header */
+  .banner-text{
+     width: 90%;
+    max-width: 50rem;
+  }
+
+  .banner-text h1 {
+    font-size: 1.5rem;
+  }
+
+  /* map section */
+  .lagos-map-section{
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .lasg__middle{
+}
 }
