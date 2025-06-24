@@ -30,7 +30,6 @@ h1, h2, h3{
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   white-space: normal;
-  word-wrap: break-word;
 }
 
 /* header of the page */
@@ -391,7 +390,7 @@ header{
   }
 
   .banner{
-        height: calc(100vh - 18rem);
+        height: calc(100vh - 15rem);
     }
     
     .eyo{
