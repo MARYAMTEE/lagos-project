@@ -342,7 +342,7 @@ section {
 
 @media (max-width: 43.75rem){
     body{
-        font-size: 0.825rem;
+        font-size: 0.9rem;
     }
 
 /* header */
@@ -385,6 +385,15 @@ header{
     height: 100%;
   }
   
-  .lasg__middle{
-}
+  .lagos-map-section{
+    background-image: url(./images/background_mobile.svg);
+  }
+
+  .banner{
+        height: calc(100vh - 25rem);
+    }
+    
+    .eyo{
+        width: 19rem;
+    }
 }
