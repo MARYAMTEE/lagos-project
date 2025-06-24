@@ -29,7 +29,7 @@ body{
 h1, h2, h3{
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  white-space: normal;
+  white-space: nowrap;
 }
 
 /* header of the page */
@@ -90,7 +90,6 @@ ul li a:not(.dropdown-menu a) {
     text-decoration: none;
     display: block;
     white-space: nowrap;
-    font-size: 0.7rem;
 }
 
 .dropdown-menu a:hover{
@@ -278,7 +277,6 @@ main{
 }
 
 /* Local govt */
-
 .hero {
   background-color: var(--soft-beige);
   background-size: cover;
@@ -292,7 +290,7 @@ main{
 .hero .overlay {
   background: rgba(0, 0, 0, 0.5);
   padding: 2rem;
-  display: grid;
+  display: block;
   width: 55%;
 }
 
@@ -330,12 +328,12 @@ section {
   border-radius: 0.625rem;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 250px;
+  width: 15.625rem;
 }
 
 .card img {
-  width: 64px;
-  height: 64px;
+  width: 4rem;
+  height: 4rem;
   margin-bottom: 0.5rem;
 }
 
@@ -383,17 +381,30 @@ header{
   .lagos-map-section{
     flex-direction: column;
     height: 100%;
-  }
-  
-  .lagos-map-section{
     background-image: url(./images/background_mobile.svg);
+
   }
 
   .banner{
-        height: 43.75rem;
+        height: calc(100vh - 8rem);
     }
     
     .eyo{
         width: 19rem;
     }
+
+    /* Local governments */
+    .history .container,
+    .location .container {
+        flex-wrap: wrap;
+    }
+
+    .hero .overlay{
+        width: 100%;
+    }
+
+    .overlay h1{
+        font-size: 1rem;
+    }
+    
 }
