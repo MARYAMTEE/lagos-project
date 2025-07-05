@@ -272,8 +272,10 @@ main{
     width: 25rem;
 }
 
-.image-map{
-    width: 35rem;
+.image-map {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Local govt */
@@ -392,7 +394,7 @@ header{
   }
 
   .banner{
-        height: calc(100vh - 2rem);
+        height: calc(100vh - 3rem);
     }
     
     .eyo{

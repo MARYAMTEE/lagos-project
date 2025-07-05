@@ -11,3 +11,7 @@ document.addEventListener("click", (e) => {
     dropdownMenu.classList.remove("toggle");
   }
 });
+
+window.addEventListener('load', () => {
+    imageMapResize();
+  });
