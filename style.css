@@ -174,7 +174,7 @@ main{
 /* Page banner */
 .banner{
     background-color: var(--soft-beige);
-    height: calc(100vh - 3rem);
+    height: calc(100vh - 1rem);
     position: relative;
     overflow: hidden;
 }
@@ -362,7 +362,7 @@ main{
 
 /* header */
 header{
-    padding: 0.5rem 1rem;
+    padding: 1rem;
 }
 
   .logo-img{
