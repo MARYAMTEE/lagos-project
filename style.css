@@ -282,19 +282,20 @@ main{
 /* Local govt */
 .hero {
   background-color: var(--soft-beige);
-  background-size: cover;
-  background-position: center;
-  padding: 6rem 1rem;
   color: white;
   text-align: center;
   position: relative;
+  width: 100%;
+  height: 20rem;
+  display: grid;
+  align-items: center;
 }
 
 .hero .overlay {
   background: rgba(0, 0, 0, 0.5);
   padding: 2rem;
   display: block;
-  width: 55%;
+  width: 45rem;
 }
 
 .history .container,
@@ -302,6 +303,19 @@ main{
   display: flex;
   gap: 2rem;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.history .text{
+    width: 100%;
+    max-width: 28rem;
+}
+
+.text h2,
+.highlights h2, 
+.location h2{
+    margin-block-end: 2rem;
 }
 
 .history img,
@@ -331,6 +345,13 @@ main{
   width: 4rem;
   height: 4rem;
   margin-bottom: 0.5rem;
+}
+
+.container-local{
+    display: grid;
+    place-items: center;
+    gap: 3rem;
+    padding: 2rem;
 }
 
 
@@ -400,9 +421,30 @@ header{
     
     .eyo{
         width: 19rem;
-    } 
+    }
+
+    .hero{
+        place-items: center;
+    }
 
     .hero .overlay{
-        width: 100%;
+        width: 22rem;
+        margin-inline: auto;
+        padding: 2rem 1.5rem;
+    }
+
+    .overlay h1{
+        font-size: 1.5rem;
+    }
+
+    .history .container,
+    .location .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-local{
+        display: grid;
+        gap: 3rem;
     }
 }
