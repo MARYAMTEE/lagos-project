@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- JAVASCRIPT -->
     <script src="script.js" defer></script>
-
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,10 +21,12 @@
         <header>
             <div class="logo-image" aria-label="Logo Image">
                 <img src="images/logo.png" alt="Lagos State Logo" class="logo-img" />
-            </div>
 
+                <i class="fa-solid fa-bars open-btn"></i>
+            </div>
+            
             <div class="navbar">
-                <nav>
+                <nav aria-label="Primary">
                     <ul>
                         <li><a href="#">Home</a></li>
                             <div class="dropdown">
@@ -71,7 +74,7 @@
             <div class="banner">
                 <div class="banner-text">
                     <h1>WELCOME TO LAGOS STATE</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet quas placeat repellendus nesciunt amet cupiditate quos sint eum consequuntur excepturi laudantium aliquam consequatur molestias</p>
+                    <p>Lagos State stands as Nigeria's commercial nerve centre and cultural melting pot. This project offers insights into its diverse local governments, thriving industries, and unique heritage</p>
                     <a href="about-us.html" class="btn">Read More</a>
                 </div>
 
@@ -105,7 +108,11 @@
                     <img src="./images/eyo.svg" class="eyo" alt="Picture of Eyo">
                 </div>
                 <div class="lagos-map cultural-image">
-                    <img src="./images/lagos_State_map.png" usemap="#image-map" alt="Map of lagos" class="image-map" />
+                    <picture>
+                        <source media="(max-width: 43.75rem)" srcset="./images/lagos_State_map.png">
+                        <img src="./images/lagos_State_map.png" usemap="#image-map" alt="Map of lagos" class="image-map" />
+                    </picture>
+                    
 
                     <map name="image-map">
                         <area alt="Ajeromi local-govt" href="ajeromi-ifelodun.html" coords="237,91,270,83,314,86,319,105,331,125,330,152,318,163,296,175,284,188,266,193,250,186,223,189" shape="poly">
@@ -117,7 +124,7 @@
                         <area alt="Ikorodu local-govt" href="ikorodu.html" coords="389,260,419,264,440,256,445,283,461,299,453,317,445,332,433,334,407,338,398,342,382,330" shape="poly">
                         <area alt="Epe local-govt" href="epe.html" coords="179,383,183,353,195,327,210,305,210,277,235,289,237,322,239,349,241,363,228,370,218,383,202,385" shape="poly">
                         <area alt="Lagos-Island local-govt" href="lagos-island.html" coords="240,377,254,362,248,343,254,316,250,291,276,279,284,295,294,307,311,314,328,327,327,337,317,347,314,370,315,368" shape="poly">
-                        <area alt="Shomolu local-govt" href="shomolu.html" coords="322,379,317,355,326,341,337,320,349,314,375,322,379,336,395,354,386,367,368,401,335,405" shape="poly">
+                        <area alt="Shomolu local-govt" href="somolu.html" coords="322,379,317,355,326,341,337,320,349,314,375,322,379,336,395,354,386,367,368,401,335,405" shape="poly">
                         <area alt="Ojo local-govt" href="ojo.html" coords="406,348,425,344,444,347,448,363,456,376,470,388,464,400,462,410,459,419,437,424,422,418,407,418,390,412,377,400" shape="poly">
                         <area alt="Eti-Osa local-govt" href="eti-osa.html" coords="175,416,171,389,182,385,200,390,221,392,235,405,236,414,221,426,189,429" shape="poly">
                         <area alt="Lagos-mainland local-govt" href="lagos-mainland.html" coords="246,385,269,379,282,374,301,381,316,387,327,400,332,409,330,425,312,433,298,434,271,432,249,436,233,440" shape="poly">

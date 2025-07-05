@@ -29,7 +29,7 @@ body{
 h1, h2, h3{
   font-family: "Raleway", sans-serif;
   font-weight: 800;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 /* header of the page */
@@ -294,17 +294,10 @@ main{
   width: 55%;
 }
 
-section {
-  padding: 3rem 1rem;
-  max-width: 1200px;
-  margin: auto;
-}
-
 .history .container,
 .location .container {
   display: flex;
   gap: 2rem;
-  /* flex-wrap: wrap; */
   align-items: center;
 }
 
@@ -347,29 +340,37 @@ section {
 header{
     padding: 0.5rem 1rem;
 }
+
   .logo-img{
     width: 1.5rem;
   }
 
   /* Navigation bar */
-  ul li, .logo-image{
+  /* ul li, .logo-image{
     display: flex;
     align-items: center;
-  }
+  } */
 
+  .logo-image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
   ul li a{
     font-size: 0.5rem;
   }
 
   .dropdown-menu{
     position: absolute;
-    right: -8rem;
+    right: 0;
+    transform: translate(50%);
     top: 1.5rem;
   }
 
   /* header */
   .banner-text{
-     width: 90%;
+    width: 90%;
     max-width: 50rem;
   }
 
@@ -378,33 +379,27 @@ header{
   }
 
   /* map section */
+  .lagos-map-section > * {
+    max-width: 100%;
+    flex-shrink: 1;
+}
+
   .lagos-map-section{
     flex-direction: column;
     height: 100%;
     background-image: url(./images/background_mobile.svg);
-
+    overflow: hidden;
   }
 
   .banner{
-        height: calc(100vh - 8rem);
+        height: calc(100dvh - 9rem);
     }
     
     .eyo{
         width: 19rem;
-    }
-
-    /* Local governments */
-    .history .container,
-    .location .container {
-        flex-wrap: wrap;
-    }
+    } 
 
     .hero .overlay{
         width: 100%;
     }
-
-    .overlay h1{
-        font-size: 1rem;
-    }
-    
 }
